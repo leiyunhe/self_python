@@ -1,4 +1,4 @@
-# Flask实现登录功能
+# 为《Py103学习分析》添加Flask登录功能
 
 参考教程
 > https://pythonspot.com/en/login-authentication-with-flask/
@@ -8,25 +8,37 @@
 app.py
 dummy.py
 tabledef.py
+update_db_from_api.py
+query_function.py
 static
   ./style.css
 templates
   ./login.html
-tutorial.db 
+  ./layout.html
+  ./index.html
+utils
+  ./const_value.py
+pic
+  ./precisionlearning_logo.jpg
+tutorial.db
+database.db
+runtime.txt
+requirements.txt
+Procfile
 
 # 运行步骤：
+python update
 python tabledef.py
 python dummy.py
 python app.py
 
 
 # 备注
-tutorial.db是程序运行中生成的数据库文件
+tutorial.db是登录用户信息的数据库文件
+database.db是查询程序的数据库文件
 
 # 下一步计划
 
-将本功能移植对接到py103学习分析的项目中，需要解决的问题有：
-
- + 注册功能
- + 用户登陆信息与数据库的匹配与判断（目前抄写出的代码，不能进行正确的判断）
- + 退出程序的功能写到父页面中，可以在所有页面显示
++ bootstrap页面设计
++ 程序抽象化处理，让程序适应更多的情况，可以考虑开智课堂其他课程，如写作班、数据科学、自然语言处理，怎么样设计一套更为通用的模板，让管理者可以通过简单的定义，完成不同课程的情况监测。
++ 功能开始复杂起来了，如何优化成更规范的代码？
